@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatitos aleatorios</title>
+</head>
+<body>
+    <h1>Gatitos aleatorios</h1><button onclick="location.reload()">Otro gatito</button>
+    <p></p>
+    <img alt="Foto gatito aleatorio">
+    <script >
+        const URL= 'https://api.thecatapi.com/v1/images/search'
+
+fetch(URL)
+    .then(res=>res.json())
+    .then(data =>{
+        const img = document.querySelector('img')
+        img.src = data[0].url
+        
+    })
+    </script>
+</body>
+</html>
