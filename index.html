@@ -7,19 +7,12 @@
     <title>Gatitos aleatorios</title>
 </head>
 <body>
-    <h1>Gatitos aleatorios</h1><button onclick="location.reload()">Otro gatito</button>
+    <h1>Gatitos aleatorios</h1><button onclick="reload()">Otro gatito</button>
     <p></p>
-    <img alt="Foto gatito aleatorio">
-    <script >
-        const URL= 'https://api.thecatapi.com/v1/images/search'
-
-fetch(URL)
-    .then(res=>res.json())
-    .then(data =>{
-        const img = document.querySelector('img')
-        img.src = data[0].url
-        
-    })
-    </script>
+    <div id="contenedor-fotos">
+        <img alt="Foto gatito aleatorio">
+    </div>
+    
+    <script src="./main.js"></script>
 </body>
 </html>
