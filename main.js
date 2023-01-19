@@ -7,7 +7,7 @@ const APIURL= 'https://api.thecatapi.com/v1/images/search?limit=3';
         
 // }
 
-async function reload(){
+async function imagenes(){
     const res = await fetch(APIURL);
     const data = await res.json();
     for (let index = 0; index < data.length; index++) {
@@ -20,4 +20,5 @@ async function reload(){
     }        
 }
 
-reload()
+
+imagenes()
