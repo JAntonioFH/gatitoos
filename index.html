@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatitos aleatorios</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+
 </head>
 <body>
     <h1>Gatitos aleatorios</h1><button onclick="location.reload()">Otro gatito</button>
-    <p></p>
-    <div id="contenedor-fotos">
-        <img alt="">
-    </div>
-    
+    <section id="randomMichis">  
+        <div id="contenedor-fotos">
+            <img alt="">
+        </div>
+    </section>
+    <h2>Michis favoritos</h2>
+    <section id="michisFavoritos">
+
+    </section>
+
+    <section id="uploadingMichi">
+        <h2>Sube la foto de un michi</h2>
+        <form id="uploadingForm">
+            <input id="file" type="file" name="file"/>
+            <button onclick="uploadMichi" type="button">Subir foto de michi</button>
+        </form>
+    </section>
     <script src="./main.js"></script>
 </body>
 </html>
